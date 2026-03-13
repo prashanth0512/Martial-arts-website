@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <title>Blog – Shield & Strike Martial Arts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/blogs.css">
+</head>
+<body>
+
+    
+    <header>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-arrow"><i class="fa-solid fa-caret-left"></i></span>Shield & Strike<span class="logo-arrow"><i class="fa-solid fa-caret-right"></i></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li>
+                    <span class="nav-dropdown" tabindex="0" role="button" aria-haspopup="true">
+                        Home <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                    <div class="dropdown-menu" role="menu">
+                        <a href="../index.html" role="menuitem"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+                        <a href="home2.html" role="menuitem"><i class="fa-solid fa-dumbbell"></i>&nbsp; Home 2</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About us</a></li>
+                <li>
+                    <span class="nav-dropdown" tabindex="0">Services <i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="dropdown-menu">
+                        <a href="services.html"><i class="fa-solid fa-list"></i>&nbsp; All Services</a>
+                        <a href="service-detail.html?service=karate"><i class="fa-solid fa-hand-fist"></i>&nbsp; Karate</a>
+                        <a href="service-detail.html?service=muay-thai"><i class="fa-solid fa-fire-flame-curved"></i>&nbsp; Muay Thai</a>
+                        <a href="service-detail.html?service=jiu-jitsu"><i class="fa-solid fa-person-falling"></i>&nbsp; Jiu-Jitsu</a>
+                        <a href="service-detail.html?service=kung-fu"><i class="fa-solid fa-yin-yang"></i>&nbsp; Kung Fu</a>
+                    </div>
+                </li>
+                <li><a href="blogs.html" class="active">Blogs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+                <a href="login.html#signup" class="get-started-btn btn btn-outline">LOGIN</a>
+                <button class="hamburger" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a><span>›</span><span>Blog</span>
+            </nav>
+            <h1 class="page-hero-title" data-animate>OUR BLOG</h1>
+            <p class="page-hero-sub" data-animate>Training tips, discipline guides, mindset insights, and stories from the Shield & Strike dojo — written by our world-class coaching team.</p>
+        </div>
+    </section>
+
+    
+    <section style="padding:32px 0; background:var(--bg-secondary); border-bottom:1px solid var(--border-color);">
+        <div class="container" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
+            <a href="blogs.html" class="btn btn-primary" style="min-height:44px; font-size:0.9rem;">All Posts</a>
+            <a href="blog-detail.html?blog=karate-basics" class="btn btn-outline" style="min-height:44px; font-size:0.9rem;"><i class="fa-solid fa-hand-fist"></i> Karate</a>
+            <a href="blog-detail.html?blog=muay-thai-training" class="btn btn-outline" style="min-height:44px; font-size:0.9rem;"><i class="fa-solid fa-fire-flame-curved"></i> Muay Thai</a>
+            <a href="blog-detail.html?blog=bjj-guard-techniques" class="btn btn-outline" style="min-height:44px; font-size:0.9rem;"><i class="fa-solid fa-person-falling"></i> Jiu-Jitsu</a>
+            <a href="blog-detail.html?blog=kung-fu-forms" class="btn btn-outline" style="min-height:44px; font-size:0.9rem;"><i class="fa-solid fa-yin-yang"></i> Kung Fu</a>
+            <a href="blog-detail.html?blog=benefits-for-kids" class="btn btn-outline" style="min-height:44px; font-size:0.9rem;"><i class="fa-solid fa-child"></i> Kids</a>
+        </div>
+    </section>
+
+    
+    <section class="blog-featured">
+        <div class="container">
+            <div class="blog-featured-header" data-animate>
+                <div>
+                    <span class="section-label">Latest Articles</span>
+                    <h2>FROM THE SHIELD & STRIKE DOJO</h2>
+                </div>
+                <p>Expert articles from our coaching team covering technique, training philosophy, lifestyle, and everything martial arts.</p>
+            </div>
+
+            <div class="blog-grid">
+
+                
+                <article class="blog-card" data-animate onclick="location.href='blog-detail.html?blog=karate-basics'">
+                    <div class="blog-card-img">
+                        <img src="../images/hero.png" alt="Karate Basics" loading="lazy">
+                        <span class="blog-card-category">Karate</span>
+                        <div class="blog-card-overlay"></div>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> March 8, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blog-card-title">Karate Basics for Beginners: Everything You Need to Know</h3>
+                        <p class="blog-card-excerpt">Discover the fundamentals of Karate — from your first stance to your first belt grading. A complete guide for anyone stepping into the dojo for the very first time.</p>
+                        <a href="blog-detail.html?blog=karate-basics" class="blog-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                
+                <article class="blog-card" data-animate data-delay="1" onclick="location.href='blog-detail.html?blog=muay-thai-training'">
+                    <div class="blog-card-img">
+                        <img src="../images/programs.png" alt="Muay Thai Training" loading="lazy">
+                        <span class="blog-card-category">Muay Thai</span>
+                        <div class="blog-card-overlay"></div>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> March 5, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3 class="blog-card-title">Muay Thai Training Tips: How to Improve Your Striking Fast</h3>
+                        <p class="blog-card-excerpt">Whether you are new to Muay Thai or looking to sharpen your skills, these tips from our coaches will dramatically improve your technique and power.</p>
+                        <a href="blog-detail.html?blog=muay-thai-training" class="blog-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                
+                <article class="blog-card" data-animate data-delay="2" onclick="location.href='blog-detail.html?blog=bjj-guard-techniques'">
+                    <div class="blog-card-img">
+                        <img src="../images/join_class.png" alt="BJJ Guard Techniques" loading="lazy">
+                        <span class="blog-card-category">Jiu-Jitsu</span>
+                        <div class="blog-card-overlay"></div>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> March 1, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3 class="blog-card-title">BJJ Guard Techniques Every Beginner Must Learn First</h3>
+                        <p class="blog-card-excerpt">The guard is the foundation of Brazilian Jiu-Jitsu. Master these fundamental positions and you'll be dangerous from the bottom — even against larger opponents.</p>
+                        <a href="blog-detail.html?blog=bjj-guard-techniques" class="blog-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                
+                <article class="blog-card" data-animate onclick="location.href='blog-detail.html?blog=kung-fu-forms'">
+                    <div class="blog-card-img">
+                        <img src="../images/about_hero_bg.png" alt="Kung Fu Forms" loading="lazy">
+                        <span class="blog-card-category">Kung Fu</span>
+                        <div class="blog-card-overlay"></div>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Feb 25, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blog-card-title">Kung Fu Forms Explained: How Taolu Develop Real Fighting Skill</h3>
+                        <p class="blog-card-excerpt">Many people dismiss forms training as choreography — until they understand the combat applications hidden inside every single movement.</p>
+                        <a href="blog-detail.html?blog=kung-fu-forms" class="blog-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                
+                <article class="blog-card" data-animate data-delay="1" onclick="location.href='blog-detail.html?blog=benefits-for-kids'">
+                    <div class="blog-card-img">
+                        <img src="../images/home2_hero.png" alt="Martial Arts for Kids" loading="lazy">
+                        <span class="blog-card-category">Kids</span>
+                        <div class="blog-card-overlay"></div>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Feb 20, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blog-card-title">Benefits of Martial Arts for Children: More Than Just Self-Defence</h3>
+                        <p class="blog-card-excerpt">Martial arts give children far more than fighting skills — from confidence and focus to better grades and lasting friendships inside the dojo.</p>
+                        <a href="blog-detail.html?blog=benefits-for-kids" class="blog-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                
+                <article class="blog-card" data-animate data-delay="2" onclick="location.href='blog-detail.html?blog=choose-your-art'">
+                    <div class="blog-card-img">
+                        <img src="../images/about_vision_bg.png" alt="Choose Martial Art" loading="lazy">
+                        <span class="blog-card-category">Guide</span>
+                        <div class="blog-card-overlay"></div>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Feb 14, 2026</span>
+                            <span><i class="fa-regular fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3 class="blog-card-title">How to Choose Your First Martial Art: A Complete Beginner's Guide</h3>
+                        <p class="blog-card-excerpt">With dozens of martial arts available, how do you pick the right one? This guide breaks down the key differences to match your goals perfectly.</p>
+                        <a href="blog-detail.html?blog=choose-your-art" class="blog-read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="blog-newsletter">
+        <div class="container">
+            <span class="section-label">Stay Updated</span>
+            <h2 data-animate>JOIN OUR NEWSLETTER</h2>
+            <p data-animate>Get new techniques, training guides, and Shield & Strike news delivered straight to your inbox — no spam, unsubscribe any time.</p>
+            <form class="newsletter-form" data-animate onsubmit="event.preventDefault(); this.innerHTML='<p style=\'color:var(--accent-color);font-family:Teko,sans-serif;font-size:1.5rem;\'>✓ THANK YOU FOR SUBSCRIBING!</p>'">
+                <input type="email" placeholder="Enter your email address" required autocomplete="email">
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <section class="global-join" id="join">
+        <div class="global-join-bg-red"></div>
+        <img src="../images/join_class.png" alt="High kick martial artist" class="global-join-fighter">
+        <div class="container global-join-inner">
+            <h2 class="global-join-title" data-animate>JOIN CLASS<br>TODAY!</h2>
+            <div class="global-join-right" data-animate data-delay="1">
+                <p>Take the first step on your martial arts journey. Our doors are open to beginners and experienced fighters alike — join a free trial class and experience Shield & Strike for yourself.</p>
+                <a href="contact.html" class="btn btn-white" style="padding: 14px 36px; font-size:1.2rem; letter-spacing:2px;">GET STARTED</a>
+            </div>
+        </div>
+    </section>
+
+
+        
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html" class="footer-logo"><span class="text-accent"><i class="fa-solid fa-caret-left"></i></span> Shield & Strike <span class="text-accent"><i class="fa-solid fa-caret-right"></i></span></a>
+                    <p class="footer-desc">Train with passion at Shield & Strike. Our academy focuses on discipline, strength, and skill, helping students become confident and capable martial artists.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-title">QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="testimonial.html">Testimonial</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">CONTACT INFO</h3>
+                    <ul class="footer-links">
+                        <li>5th Floor, JayaSudha Heights,</li>
+                        <li>Madhapur, Hyderabad, Telangana</li>
+                        <li style="margin-top:12px">(+91) 123 456 78 90</li>
+                        <li style="margin-top:12px"><a href="mailto:Shield & Strike26@gmail.com">Shield & Strike26@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2026 Shield & Strike</p>
+                <p>Powered by Shield & Strike</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/pages.js"></script>
+</body>
+</html>
+

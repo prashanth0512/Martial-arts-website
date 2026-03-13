@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <title>Login / Sign Up – Shield & Strike></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <div class="auth-wrapper">
+        <div class="auth-left">
+            <div class="auth-left-bg"></div>
+            <div class="auth-left-content">
+                <a href="../index.html" class="logo">
+                    <span class="logo-arrow"><i class="fa-solid fa-caret-left"></i></span>Shield & Strike<span class="logo-arrow"><i class="fa-solid fa-caret-right"></i></span>
+                </a>
+                <div class="auth-quote" data-animate>
+                    <h2 style="font-family: 'Teko', sans-serif;">UNLEASH YOUR<br>POTENTIAL.</h2>
+                    <p>Join the best martial arts school in the city of Hyderabad.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-right">
+            <div class="auth-top-actions">
+                <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+
+            <div class="auth-box">
+                <div class="auth-toggle">
+                    <button class="toggle-btn active" id="btn-login" onclick="switchTab('login')">LOGIN</button>
+                    <button class="toggle-btn" id="btn-signup" onclick="switchTab('signup')">SIGN UP</button>
+                </div>
+
+                <form id="form-login" class="auth-form active" onsubmit="event.preventDefault();">
+                    <h3 class="form-title">Welcome Back</h3>
+                    <p class="form-subtitle">Enter your details to access your account.</p>
+                    
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-pass">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary auth-btn">LOGIN NOW</button>
+                </form>
+
+                <form id="form-signup" class="auth-form" onsubmit="event.preventDefault();">
+                    <h3 class="form-title">Create Account</h3>
+                    <p class="form-subtitle">Join our community of martial artists.</p>
+                    
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Create a password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary auth-btn">SIGN UP NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
