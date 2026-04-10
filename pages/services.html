@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <title>Services - Shield & Strike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/services.css">
+    
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+    <link rel="alternate icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../images/logo.svg">
+        /* Program cards moved to services.css */
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.svg" alt="Shield & Strike Logo">
+                <span>Shield & Strike</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li>
+                    <span class="nav-dropdown" tabindex="0" role="button" aria-haspopup="true">
+                        Home <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                    <div class="dropdown-menu" role="menu">
+                        <a href="../index.html" role="menuitem"><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+                        <a href="home2.html" role="menuitem"><i class="fa-solid fa-dumbbell"></i>&nbsp; Home 2</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <div class="header-actions">
+                <button id="theme-toggle" class="action-btn theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="rtl-toggle" class="action-btn rtl-toggle" aria-label="Toggle LTR/RTL">
+                    LTR
+                </button>
+                <a href="login.html" class="action-btn login-btn" aria-label="Login">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a href="login.html#signup" class="btn btn-outline get-started-btn">LOGIN</a>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+     
+    <section class="page-hero" style="background-image: url('../images/services_hero.png');">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a><span>›</span><span>Services</span>
+            </nav>
+            <h1 class="page-hero-title" data-animate>OUR SERVICES</h1>
+            <p class="page-hero-sub" data-animate>World-class martial arts training for every skill level. Choose your path and start your journey today.</p>
+        </div>
+    </section>
+
+    
+    <section class="section-pad">
+        <div class="container">
+            <div style="text-align:center; margin-bottom:8px;">
+                <span class="section-label">What We Offer</span>
+            </div>
+            <h2 style="text-align:center; font-size:3.5rem;" data-animate>CHOOSE YOUR DISCIPLINE</h2>
+            <p style="text-align:center; color:var(--text-secondary); max-width:520px; margin:12px auto 0;" data-animate>Click any discipline to explore its full content, pricing, gallery, and reviews.</p>
+            <div class="programs-page-grid">
+                <a href="service-detail.html?service=karate" class="prog-card" data-animate>
+                    <div class="prog-card-header">
+                        <span class="prog-card-num">01</span>
+                        <div class="prog-card-icon"><i class="fa-solid fa-hand-fist"></i></div>
+                        <h2 class="prog-card-title">KARATE</h2>
+                    </div>
+                    <div class="prog-card-body">
+                        <p>Learn traditional karate techniques including kata, kumite, and self-defence applications. Classes available for all ages and skill levels.</p>
+                        <span class="btn btn-primary">EXPLORE KARATE <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="service-detail.html?service=muay-thai" class="prog-card" data-animate data-delay="1">
+                    <div class="prog-card-header">
+                        <span class="prog-card-num">02</span>
+                        <div class="prog-card-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                        <h2 class="prog-card-title">MUAY THAI</h2>
+                    </div>
+                    <div class="prog-card-body">
+                        <p>The Art of Eight Limbs — learn devastating strikes using fists, elbows, knees, and kicks combined with clinch technique.</p>
+                        <span class="btn btn-primary">EXPLORE MUAY THAI <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="service-detail.html?service=jiu-jitsu" class="prog-card" data-animate data-delay="2">
+                    <div class="prog-card-header">
+                        <span class="prog-card-num">03</span>
+                        <div class="prog-card-icon"><i class="fa-solid fa-person-falling"></i></div>
+                        <h2 class="prog-card-title">JIU-JITSU</h2>
+                    </div>
+                    <div class="prog-card-body">
+                        <p>Master the gentle art of ground-fighting — submissions, sweeps, and positional control. Excellent for self-defence and competitive grappling.</p>
+                        <span class="btn btn-primary">EXPLORE JIU-JITSU <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="service-detail.html?service=kung-fu" class="prog-card" data-animate data-delay="3">
+                    <div class="prog-card-header">
+                        <span class="prog-card-num">04</span>
+                        <div class="prog-card-icon"><i class="fa-solid fa-yin-yang"></i></div>
+                        <h2 class="prog-card-title">KUNG FU</h2>
+                    </div>
+                    <div class="prog-card-body">
+                        <p>A rich blend of traditional Chinese martial arts forms, strikes, and philosophical training developing physical and mental excellence.</p>
+                        <span class="btn btn-primary">EXPLORE KUNG FU <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="services-gallery">
+        <div class="container">
+            <div class="services-gallery-header" data-animate>
+                <span class="section-label">Photo Gallery</span>
+                <h2>OUR TRAINING GALLERY</h2>
+                <p>A glimpse inside our dojo — training sessions, competitions, and community moments.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-animate>
+                    <img src="../images/hero.png" alt="Karate Training" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Karate Training</span></div>
+                </div>
+                <div class="gallery-item" data-animate data-delay="1">
+                    <img src="../images/programs.png" alt="Group Class" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Group Class</span></div>
+                </div>
+                <div class="gallery-item" data-animate data-delay="2">
+                    <img src="../images/join_class.png" alt="Muay Thai" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Muay Thai Session</span></div>
+                </div>
+                <div class="gallery-item" data-animate data-delay="3">
+                    <img src="../images/about_hero_bg.png" alt="Dojo Interior" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Our Dojo</span></div>
+                </div>
+                <div class="gallery-item" data-animate>
+                    <img src="../images/home2_hero.png" alt="Jiu-Jitsu" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Jiu-Jitsu Drills</span></div>
+                </div>
+                <div class="gallery-item" data-animate data-delay="1">
+                    <img src="../images/home2_workout.png" alt="Conditioning" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Conditioning</span></div>
+                </div>
+                <div class="gallery-item" data-animate data-delay="2">
+                    <img src="../images/about_vision_bg.png" alt="Kung Fu" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Kung Fu Forms</span></div>
+                </div>
+                <div class="gallery-item" data-animate data-delay="3">
+                    <img src="../images/about_ben.png" alt="Championship" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Championship</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="services-testi">
+        <div class="container">
+            <div class="services-testi-header" data-animate>
+                <span class="section-label">Student Reviews</span>
+                <h2>WHAT OUR STUDENTS SAY</h2>
+                <p>Real stories from real students who transformed their lives at Shield & Strike.</p>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card" data-animate>
+                    <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testi-quote">"I started Karate with zero experience and in 18 months earned my brown belt. The instructors are patient, passionate, and  skilled. Shield & Strike changed my life."</p>
+                    <div class="testi-author">
+                        <img src="../images/testimonial_woman.png" alt="Monica Hale">
+                        <div><h5>MONICA HALE</h5><span>Karate — Brown Belt</span></div>
+                    </div>
+                </div>
+                <div class="testi-card" data-animate data-delay="1">
+                    <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testi-quote">"Muay Thai at Shield & Strike completely changed my fitness. I lost 14 kg in 4 months and gained confidence I never thought possible. The coaches are world-class."</p>
+                    <div class="testi-author">
+                        <img src="../images/testimonial_man.png" alt="Michael Tan">
+                        <div><h5>MICHAEL TAN</h5><span>Muay Thai — 2 Years</span></div>
+                    </div>
+                </div>
+                <div class="testi-card" data-animate data-delay="2">
+                    <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testi-quote">"BJJ at Shield & Strike saved me twice in real-life situations. The self-defence is incredible and the community is the most welcoming I've ever been a part of."</p>
+                    <div class="testi-author">
+                        <img src="../images/testimonial_woman.png" alt="Sara Johnson">
+                        <div><h5>SARA JOHNSON</h5><span>BJJ — Blue Belt</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="services-faq">
+        <div class="container">
+            <div class="services-faq-header" data-animate>
+                <span class="section-label">FAQ</span>
+                <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                <p>Got questions? We have answers. Can't find what you need? Reach out to us anytime.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item" data-animate>
+                    <button class="faq-question" aria-expanded="false">
+                        Do I need any experience to join? <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely not! All of our programmes welcome complete beginners. Our coaches are trained to bring you from zero to confident at a comfortable pace. We have beginner-specific classes that focus on the fundamentals before progressing to more advanced techniques.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate data-delay="1">
+                    <button class="faq-question" aria-expanded="false">
+                        What age groups do you cater for? <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer classes for children aged 5 and up, teens, and adults of all ages. Our children's programmes focus on discipline, coordination, and fun, while our adult classes offer fitness, self-defence, and competitive pathways. There's no upper age limit — many of our students start training in their 40s and 50s.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate data-delay="2">
+                    <button class="faq-question" aria-expanded="false">
+                        How many times per week should I train? <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend starting with 2–3 sessions per week. This gives your body enough time to recover while building skills consistently. As you progress, many students increase to 4–5 sessions per week. Our flexible memberships support whatever schedule works best for you.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate data-delay="3">
+                    <button class="faq-question" aria-expanded="false">
+                        Do I need to buy my own equipment? <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Beginner and Intermediate plans include your starter gear (uniform or hand wraps depending on discipline). As you advance, you may wish to purchase your own personalised equipment. We have a pro shop on-site and can recommend the best gear for your level and goals.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate>
+                    <button class="faq-question" aria-expanded="false">
+                        Can I try a free class before committing? <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a complimentary free trial class for every new student. Simply fill in our contact form or call us to book your spot. You'll have the chance to experience the training, meet the coaches, and find out which discipline suits you best before signing up.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-animate data-delay="1">
+                    <button class="faq-question" aria-expanded="false">
+                        Are there contracts or lock-in periods? <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No lock-in contracts — ever. Our memberships are billed monthly and you can cancel anytime with 30 days notice. We believe the quality of our training will keep you coming back, not a contract. All plans are flexible and can be paused for travel or illness on request.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="global-join" id="join">
+        <div class="global-join-bg-red"></div>
+        <img src="../images/join_class.png" alt="High kick martial artist" class="global-join-fighter">
+        <div class="container global-join-inner">
+            <h2 class="global-join-title" data-animate>JOIN CLASS<br>TODAY!</h2>
+            <div class="global-join-right" data-animate data-delay="1">
+                <p>Take the first step on your martial arts journey. Our doors are open to beginners and experienced fighters alike — join a free trial class and experience Shield & Strike for yourself.</p>
+                <a href="contact.html" class="btn btn-white" style="padding: 14px 36px; font-size:1.2rem; letter-spacing:2px;">GET STARTED</a>
+            </div>
+        </div>
+    </section>
+        
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../images/logo.svg" alt="Shield & Strike Logo" style="height: 40px; margin-right: 10px;">
+                        Shield & Strike
+                    </a>
+                    <p class="footer-desc">Train with passion at Shield & Strike. Our academy focuses on discipline, strength, and skill, helping students become confident and capable martial artists.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-title">QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="about.html">About Us <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="services.html">Services <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="blogs.html">Blogs <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="contact.html">Contact Us <i class="fa-solid fa-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">ADDITIONAL PAGES</h3>
+                    <ul class="footer-links">
+                        <li><a href="404.html">Error 404 <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="coming-soon.html">Coming Soon <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="dashboard.html">Dashboard <i class="fa-solid fa-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">CONTACT INFO</h3>
+                    <ul class="footer-links">
+                        <li>5th Floor,Jayasudha Heights</li>
+                        <li>Hyderabad,Telangana</li>
+                        <li style="margin-top:12px">(+91) 9876543210</li>
+                        <li style="margin-top:12px"><a href="mailto:shieldandstrike26@gmail.com">shieldandstrike26@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2026 Shield & Strike</p>
+                <p>Powered by Shield & Strike</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/pages.js"></script>
+    <script>
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('.faq-item');
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+          if (!isOpen) item.classList.add('open');
+          btn.setAttribute('aria-expanded', !isOpen);
+        });
+      });
+    </script>
+</body>
+</html>
+

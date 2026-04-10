@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <title>Dashboard – Shield & Strike Martial Arts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+    <link rel="alternate icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../images/logo.svg">
+</head>
+<body>
+
+    
+    <aside class="dash-sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.svg" alt="Shield & Strike Logo" style="height: 40px;">
+                <span style="font-size: 1.8rem; letter-spacing: 1px;">Shield & Strike</span>
+            </a>
+            <button class="sidebar-close" id="sidebar-close" aria-label="Close sidebar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="sidebar-avatar">
+                <img src="../images/testimonial_man.png" alt="Student Avatar">
+                <span class="avatar-belt-dot" title="Green Belt"></span>
+            </div>
+            <h4 class="sidebar-name">Michael Tan</h4>
+            <span class="sidebar-rank"><i class="fa-solid fa-medal"></i> Green Belt – Karate</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="sidebar-link active" data-section="overview">
+                <i class="fa-solid fa-grip"></i><span>Overview</span>
+            </a>
+            <a href="#" class="sidebar-link" data-section="belt-progress">
+                <i class="fa-solid fa-ranking-star"></i><span>Belt Progress</span>
+            </a>
+            <a href="#" class="sidebar-link" data-section="videos">
+                <i class="fa-solid fa-play-circle"></i><span>Technique Videos</span>
+            </a>
+            <a href="#" class="sidebar-link" data-section="testing">
+                <i class="fa-solid fa-calendar-check"></i><span>Testing Dates</span>
+            </a>
+            <a href="#" class="sidebar-link" data-section="messages">
+                <i class="fa-solid fa-envelope"></i><span>Dojo Messages</span>
+                <span class="sidebar-badge">3</span>
+            </a>
+            <a href="#" class="sidebar-link" data-section="profile">
+                <i class="fa-solid fa-user-gear"></i><span>Profile</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="login.html" class="sidebar-logout"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
+        </div>
+    </aside>
+
+    
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    
+    <main class="dash-main">
+        
+        <div class="dash-topbar">
+            <button class="dash-hamburger" id="sidebar-open" aria-label="Open sidebar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <h2 class="topbar-title" id="topbar-title">Overview</h2>
+            <div class="topbar-actions">
+                <button class="topbar-btn" title="Notifications"><i class="fa-solid fa-bell"></i><span class="notif-dot"></span></button>
+                <a href="../index.html" class="topbar-btn" title="Back to Website"><i class="fa-solid fa-house"></i></a>
+                <button id="theme-toggle" class="topbar-btn theme-toggle" title="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+        </div>
+
+        
+        <section class="dash-section active" id="sec-overview">
+            
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-fire"></i></div>
+                    <div>
+                        <span class="stat-value">47</span>
+                        <span class="stat-label">Classes Attended</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:rgba(34,197,94,0.15);color:#22c55e;"><i class="fa-solid fa-ranking-star"></i></div>
+                    <div>
+                        <span class="stat-value">Green Belt</span>
+                        <span class="stat-label">Current Rank</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:rgba(99,102,241,0.15);color:#6366f1;"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div>
+                        <span class="stat-value">14 Days</span>
+                        <span class="stat-label">Next Belt Test</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:rgba(245,158,11,0.15);color:#f59e0b;"><i class="fa-solid fa-trophy"></i></div>
+                    <div>
+                        <span class="stat-value">12</span>
+                        <span class="stat-label">Techniques Mastered</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="dash-grid-2">
+                <div class="dash-card">
+                    <div class="card-header">
+                        <h3>Belt Journey</h3>
+                        <span class="card-badge">60% Complete</span>
+                    </div>
+                    <div class="belt-timeline-mini">
+                        <div class="belt-step completed"><span class="belt-dot" style="background:#fff;border:2px solid #888;"></span><span>White</span></div>
+                        <div class="belt-step completed"><span class="belt-dot" style="background:#f5e642;"></span><span>Yellow</span></div>
+                        <div class="belt-step completed"><span class="belt-dot" style="background:#f97316;"></span><span>Orange</span></div>
+                        <div class="belt-step active"><span class="belt-dot" style="background:#22c55e;"></span><span>Green</span></div>
+                        <div class="belt-step"><span class="belt-dot" style="background:#3b82f6;"></span><span>Blue</span></div>
+                        <div class="belt-step"><span class="belt-dot" style="background:#7c3aed;"></span><span>Purple</span></div>
+                        <div class="belt-step"><span class="belt-dot" style="background:#92400e;"></span><span>Brown</span></div>
+                        <div class="belt-step"><span class="belt-dot" style="background:#111;border:2px solid #555;"></span><span>Black</span></div>
+                    </div>
+                </div>
+                <div class="dash-card">
+                    <div class="card-header">
+                        <h3>Upcoming Schedule</h3>
+                        <a href="#" class="card-link" data-goto="testing">View All</a>
+                    </div>
+                    <ul class="schedule-list">
+                        <li>
+                            <div class="sched-date"><span class="sched-day">15</span><span class="sched-month">MAR</span></div>
+                            <div><strong>Karate – Green Belt Review</strong><br><small>Sat 10:00 AM • Dojo A</small></div>
+                        </li>
+                        <li>
+                            <div class="sched-date"><span class="sched-day">22</span><span class="sched-month">MAR</span></div>
+                            <div><strong>Kumite Sparring Session</strong><br><small>Sat 2:00 PM • Dojo B</small></div>
+                        </li>
+                        <li>
+                            <div class="sched-date"><span class="sched-day">25</span><span class="sched-month">MAR</span></div>
+                            <div><strong>Green → Blue Belt Test</strong><br><small>Tue 6:00 PM • Main Hall</small></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="dash-card">
+                <div class="card-header">
+                    <h3>Latest Technique Videos</h3>
+                    <a href="#" class="card-link" data-goto="videos">View All</a>
+                </div>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumb"><img src="../images/hero.png" alt="Front Kick"><div class="play-overlay"><i class="fa-solid fa-play"></i></div><span class="video-duration">4:32</span></div>
+                        <div class="video-info"><h4>Mae Geri – Front Kick</h4><span>Karate • Beginner</span></div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb"><img src="../images/programs.png" alt="Roundhouse"><div class="play-overlay"><i class="fa-solid fa-play"></i></div><span class="video-duration">6:18</span></div>
+                        <div class="video-info"><h4>Mawashi Geri – Roundhouse</h4><span>Karate • Intermediate</span></div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb"><img src="../images/join_class.png" alt="Kata"><div class="play-overlay"><i class="fa-solid fa-play"></i></div><span class="video-duration">8:45</span></div>
+                        <div class="video-info"><h4>Heian Yondan – Kata</h4><span>Karate • Advanced</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="dash-section" id="sec-belt-progress">
+            <div class="dash-card">
+                <div class="card-header"><h3>Your Belt Journey</h3></div>
+                <p style="color:var(--text-secondary);margin-bottom:30px;">Track your progression from White Belt to Black Belt. Each belt requires mastering specific techniques, attending minimum classes, and passing the belt test.</p>
+                <div class="belt-progress-full">
+                    
+                    <div class="bp-row completed">
+                        <div class="bp-indicator"><span class="bp-dot" style="background:#fff;border:2px solid #888;"></span><span class="bp-line"></span></div>
+                        <div class="bp-card">
+                            <div class="bp-card-head"><h4>White Belt <i class="fa-solid fa-circle-check" style="color:#22c55e;"></i></h4><span class="bp-date">Earned: Jan 2025</span></div>
+                            <p>Fundamentals — basic stances, blocks, and etiquette.</p>
+                            <div class="bp-progress-bar"><div class="bp-fill" style="width:100%;"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bp-row completed">
+                        <div class="bp-indicator"><span class="bp-dot" style="background:#f5e642;"></span><span class="bp-line"></span></div>
+                        <div class="bp-card">
+                            <div class="bp-card-head"><h4>Yellow Belt <i class="fa-solid fa-circle-check" style="color:#22c55e;"></i></h4><span class="bp-date">Earned: Apr 2025</span></div>
+                            <p>Expanded strikes, first kata (Heian Shodan), and light sparring.</p>
+                            <div class="bp-progress-bar"><div class="bp-fill" style="width:100%;"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bp-row completed">
+                        <div class="bp-indicator"><span class="bp-dot" style="background:#f97316;"></span><span class="bp-line"></span></div>
+                        <div class="bp-card">
+                            <div class="bp-card-head"><h4>Orange Belt <i class="fa-solid fa-circle-check" style="color:#22c55e;"></i></h4><span class="bp-date">Earned: Aug 2025</span></div>
+                            <p>Combination drills, Heian Nidan, controlled kumite.</p>
+                            <div class="bp-progress-bar"><div class="bp-fill" style="width:100%;"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bp-row active">
+                        <div class="bp-indicator"><span class="bp-dot" style="background:#22c55e;"></span><span class="bp-line"></span></div>
+                        <div class="bp-card">
+                            <div class="bp-card-head"><h4>Green Belt <span class="bp-current">CURRENT</span></h4><span class="bp-date">Since: Dec 2025</span></div>
+                            <p>Advanced kata (Heian Yondan), ippon sparring, self-defence applications.</p>
+                            <div class="bp-checklist">
+                                <label><input type="checkbox" checked disabled> Heian Sandan</label>
+                                <label><input type="checkbox" checked disabled> Heian Yondan</label>
+                                <label><input type="checkbox" disabled> Ippon Kumite (5 sets)</label>
+                                <label><input type="checkbox" disabled> 50 classes attended</label>
+                            </div>
+                            <div class="bp-progress-bar"><div class="bp-fill" style="width:60%;"></div></div>
+                            <span style="font-size:0.8rem;color:var(--text-secondary);">60% — 2 requirements remaining</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bp-row locked">
+                        <div class="bp-indicator"><span class="bp-dot" style="background:#3b82f6;"></span><span class="bp-line"></span></div>
+                        <div class="bp-card">
+                            <div class="bp-card-head"><h4>Blue Belt <i class="fa-solid fa-lock" style="color:var(--text-secondary);"></i></h4></div>
+                            <p>Tekki Shodan, advanced kumite, tournament preparation.</p>
+                            <div class="bp-progress-bar"><div class="bp-fill" style="width:0%;"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bp-row locked">
+                        <div class="bp-indicator"><span class="bp-dot" style="background:#7c3aed;"></span><span class="bp-line"></span></div>
+                        <div class="bp-card">
+                            <div class="bp-card-head"><h4>Purple Belt <i class="fa-solid fa-lock" style="color:var(--text-secondary);"></i></h4></div>
+                            <p>Bassai Dai, advanced self-defence, teaching assistant role.</p>
+                            <div class="bp-progress-bar"><div class="bp-fill" style="width:0%;"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bp-row locked">
+                        <div class="bp-indicator"><span class="bp-dot" style="background:#92400e;"></span><span class="bp-line"></span></div>
+                        <div class="bp-card">
+                            <div class="bp-card-head"><h4>Brown Belt <i class="fa-solid fa-lock" style="color:var(--text-secondary);"></i></h4></div>
+                            <p>Kanku Dai, free sparring mastery, mentoring juniors.</p>
+                            <div class="bp-progress-bar"><div class="bp-fill" style="width:0%;"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bp-row locked">
+                        <div class="bp-indicator"><span class="bp-dot" style="background:#111;border:2px solid #555;"></span></div>
+                        <div class="bp-card">
+                            <div class="bp-card-head"><h4>Black Belt <i class="fa-solid fa-lock" style="color:var(--text-secondary);"></i></h4></div>
+                            <p>Full curriculum mastery, Shodan examination, lifetime commitment.</p>
+                            <div class="bp-progress-bar"><div class="bp-fill" style="width:0%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="dash-section" id="sec-videos">
+            <div class="dash-card">
+                <div class="card-header"><h3>Technique Videos</h3></div>
+                <div class="video-filters">
+                    <button class="vid-filter active" data-filter="all">All</button>
+                    <button class="vid-filter" data-filter="beginner">Beginner</button>
+                    <button class="vid-filter" data-filter="intermediate">Intermediate</button>
+                    <button class="vid-filter" data-filter="advanced">Advanced</button>
+                </div>
+            </div>
+            <div class="video-grid video-grid-full">
+                <div class="video-card" data-level="beginner">
+                    <div class="video-thumb"><img src="../images/hero.png" alt="Front Kick"><div class="play-overlay"><i class="fa-solid fa-play"></i></div><span class="video-duration">4:32</span></div>
+                    <div class="video-info"><h4>Mae Geri – Front Kick</h4><span>Karate • Beginner</span></div>
+                </div>
+                <div class="video-card" data-level="beginner">
+                    <div class="video-thumb"><img src="../images/about_james.png" alt="Basic Blocks"><div class="play-overlay"><i class="fa-solid fa-play"></i></div><span class="video-duration">5:10</span></div>
+                    <div class="video-info"><h4>Age Uke – Rising Block</h4><span>Karate • Beginner</span></div>
+                </div>
+                <div class="video-card" data-level="intermediate">
+                    <div class="video-thumb"><img src="../images/programs.png" alt="Roundhouse Kick"><div class="play-overlay"><i class="fa-solid fa-play"></i></div><span class="video-duration">6:18</span></div>
+                    <div class="video-info"><h4>Mawashi Geri – Roundhouse</h4><span>Karate • Intermediate</span></div>
+                </div>
+                <div class="video-card" data-level="intermediate">
+                    <div class="video-thumb"><img src="../images/home2_workout.png" alt="Combinations"><div class="play-overlay"><i class="fa-solid fa-play"></i></div><span class="video-duration">7:22</span></div>
+                    <div class="video-info"><h4>Combination Strikes (3-hit)</h4><span>Karate • Intermediate</span></div>
+                </div>
+                <div class="video-card" data-level="advanced">
+                    <div class="video-thumb"><img src="../images/join_class.png" alt="Kata"><div class="play-overlay"><i class="fa-solid fa-play"></i></div><span class="video-duration">8:45</span></div>
+                    <div class="video-info"><h4>Heian Yondan – Kata</h4><span>Karate • Advanced</span></div>
+                </div>
+                <div class="video-card" data-level="advanced">
+                    <div class="video-thumb"><img src="../images/about_hero_bg.png" alt="Sparring"><div class="play-overlay"><i class="fa-solid fa-play"></i></div><span class="video-duration">10:05</span></div>
+                    <div class="video-info"><h4>Ippon Kumite – Sparring</h4><span>Karate • Advanced</span></div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="dash-section" id="sec-testing">
+            <div class="dash-card">
+                <div class="card-header"><h3>Upcoming Belt Tests & Events</h3></div>
+                <div class="testing-timeline">
+                    <div class="test-event upcoming">
+                        <div class="test-date-box"><span class="test-day">15</span><span class="test-mo">MAR</span></div>
+                        <div class="test-body">
+                            <h4>Green Belt Review Session</h4>
+                            <p><i class="fa-solid fa-clock"></i> Saturday 10:00 AM – 12:00 PM</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Dojo A, GELUD Academy</p>
+                            <span class="test-tag review">Review</span>
+                        </div>
+                    </div>
+                    <div class="test-event upcoming highlight">
+                        <div class="test-date-box"><span class="test-day">25</span><span class="test-mo">MAR</span></div>
+                        <div class="test-body">
+                            <h4>Green → Blue Belt Examination</h4>
+                            <p><i class="fa-solid fa-clock"></i> Tuesday 6:00 PM – 8:00 PM</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Main Hall, GELUD Academy</p>
+                            <span class="test-tag exam">Belt Test</span>
+                        </div>
+                    </div>
+                    <div class="test-event upcoming">
+                        <div class="test-date-box"><span class="test-day">05</span><span class="test-mo">APR</span></div>
+                        <div class="test-body">
+                            <h4>Inter-Dojo Tournament</h4>
+                            <p><i class="fa-solid fa-clock"></i> Saturday 9:00 AM – 5:00 PM</p>
+                            <p><i class="fa-solid fa-location-dot"></i> NYC Martial Arts Center</p>
+                            <span class="test-tag tournament">Tournament</span>
+                        </div>
+                    </div>
+                    <div class="test-event past">
+                        <div class="test-date-box"><span class="test-day">10</span><span class="test-mo">DEC</span></div>
+                        <div class="test-body">
+                            <h4>Orange → Green Belt Examination</h4>
+                            <p><i class="fa-solid fa-clock"></i> Passed ✓</p>
+                            <span class="test-tag passed">Passed</span>
+                        </div>
+                    </div>
+                    <div class="test-event past">
+                        <div class="test-date-box"><span class="test-day">18</span><span class="test-mo">AUG</span></div>
+                        <div class="test-body">
+                            <h4>Yellow → Orange Belt Examination</h4>
+                            <p><i class="fa-solid fa-clock"></i> Passed ✓</p>
+                            <span class="test-tag passed">Passed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="dash-section" id="sec-messages">
+            <div class="dash-card">
+                <div class="card-header"><h3>Dojo Messages</h3></div>
+                <div class="msg-list">
+                    <div class="msg-item unread">
+                        <div class="msg-avatar"><img src="../images/about_james.png" alt="Sensei"></div>
+                        <div class="msg-body">
+                            <div class="msg-top"><strong>Sensei James Taylor</strong><span>2 hours ago</span></div>
+                            <p>Great work in today's class, Michael! Remember to practice Heian Yondan at home before Saturday's review session.</p>
+                        </div>
+                    </div>
+                    <div class="msg-item unread">
+                        <div class="msg-avatar"><i class="fa-solid fa-bullhorn"></i></div>
+                        <div class="msg-body">
+                            <div class="msg-top"><strong>Dojo Announcement</strong><span>1 day ago</span></div>
+                            <p>Belt testing schedule for March has been published. Please check the Testing Dates section for details.</p>
+                        </div>
+                    </div>
+                    <div class="msg-item unread">
+                        <div class="msg-avatar"><img src="../images/about_ben.png" alt="Coach"></div>
+                        <div class="msg-body">
+                            <div class="msg-top"><strong>Coach Ben Arnold</strong><span>3 days ago</span></div>
+                            <p>Inter-Dojo Tournament registrations are open! Let me know if you want to compete in the Green Belt division.</p>
+                        </div>
+                    </div>
+                    <div class="msg-item">
+                        <div class="msg-avatar"><i class="fa-solid fa-bullhorn"></i></div>
+                        <div class="msg-body">
+                            <div class="msg-top"><strong>Dojo Announcement</strong><span>1 week ago</span></div>
+                            <p>New technique videos have been added to the video library. Check them out!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="dash-section" id="sec-profile">
+            <div class="dash-grid-2">
+                <div class="dash-card">
+                    <div class="card-header"><h3>Personal Information</h3></div>
+                    <form class="profile-form" onsubmit="event.preventDefault();">
+                        <div class="pf-group">
+                            <label>Full Name</label>
+                            <input type="text" value="Michael Tan">
+                        </div>
+                        <div class="pf-group">
+                            <label>Email</label>
+                            <input type="email" value="michael.tan@example.com">
+                        </div>
+                        <div class="pf-group">
+                            <label>Phone</label>
+                            <input type="tel" value="(+1) 555 123 4567">
+                        </div>
+                        <div class="pf-group">
+                            <label>Discipline</label>
+                            <select>
+                                <option selected>Karate</option>
+                                <option>Muay Thai</option>
+                                <option>Jiu-Jitsu</option>
+                                <option>Kung Fu</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top:10px;">SAVE CHANGES</button>
+                    </form>
+                </div>
+                <div class="dash-card">
+                    <div class="card-header"><h3>Membership</h3></div>
+                    <div class="membership-info">
+                        <div class="mem-row"><span>Plan</span><strong>Intermediate – Karate</strong></div>
+                        <div class="mem-row"><span>Status</span><strong style="color:#22c55e;">Active</strong></div>
+                        <div class="mem-row"><span>Member Since</span><strong>January 2025</strong></div>
+                        <div class="mem-row"><span>Next Payment</span><strong>April 1, 2026</strong></div>
+                        <div class="mem-row"><span>Monthly Fee</span><strong>$99 / month</strong></div>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline" style="margin-top:20px;width:100%;text-align:center;">CONTACT SUPPORT</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

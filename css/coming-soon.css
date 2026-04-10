@@ -1,0 +1,163 @@
+
+.cs-page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d0d0d;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+[data-theme="light"] .cs-page { background-color: #f9f9fb; }
+
+
+.parallax-bg {
+  position: absolute;
+  top: -10%; left: -10%;
+  width: 120%; height: 120%;
+  background-image: url('../images/hero.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  filter: grayscale(1) blur(5px);
+  z-index: 0;
+  animation: slowZoom 20s linear infinite alternate;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1) translate(0, 0); }
+  to { transform: scale(1.1) translate(-2%, -2%); }
+}
+
+
+.cs-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 650px;
+  padding: 40px;
+  background: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  text-align: center;
+}
+
+[data-theme="light"] .cs-container {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.cs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.cs-logo { height: 50px; width: auto; }
+.cs-brand-name {
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+}
+
+.cs-title {
+  font-family: 'Teko', sans-serif;
+  font-size: 4rem;
+  color: var(--accent-color);
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.cs-message {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+
+.cs-status {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.cs-status-text {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cs-status-text span { color: var(--accent-color); font-weight: 700; }
+
+.cs-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+[data-theme="light"] .cs-progress-bar { background: rgba(0, 0, 0, 0.05); }
+
+.cs-progress-fill {
+  width: 85%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-color), #8a0c20);
+  border-radius: 10px;
+  animation: progressFill 2s ease-out forwards;
+}
+
+@keyframes progressFill {
+  from { width: 0; }
+  to { width: 85%; }
+}
+
+
+.cs-actions { display: flex; gap: 16px; margin-bottom: 40px; }
+
+.cs-social { display: flex; gap: 20px; }
+.cs-social a {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  transition: color 0.3s, transform 0.3s;
+}
+.cs-social a:hover { color: var(--accent-color); transform: translateY(-3px); }
+
+
+@media (max-width: 1024px) {
+  .cs-container { max-width: 500px; padding: 40px 30px; }
+  .cs-title { font-size: 3rem; }
+}
+
+@media (max-width: 360px) {
+  .cs-container { max-width: 290px; padding: 30px 20px; border-radius: 15px; }
+  .cs-brand-name { font-size: 1.6rem; }
+  .cs-logo { height: 40px; }
+  .cs-title { font-size: 2.5rem; }
+  .cs-message { font-size: 0.9rem; margin-bottom: 30px; }
+  .cs-actions { flex-direction: column; width: 100%; }
+  .cs-actions .btn { width: 100%; }
+}
