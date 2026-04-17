@@ -117,4 +117,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  
+  const rtlBtn = document.getElementById('rtl-toggle');
+  
+  function setDirection(isRTL) {
+    if (isRTL) {
+      root.setAttribute('dir', 'rtl');
+      if (rtlBtn) rtlBtn.textContent = 'RTL';
+      localStorage.setItem('rtl', 'true');
+    } else {
+      root.setAttribute('dir', 'ltr');
+      if (rtlBtn) rtlBtn.textContent = 'LTR';
+      localStorage.setItem('rtl', 'false');
+    }
+  }
+
+  const savedRTL = localStorage.getItem('rtl') === 'true';
+  setDirection(savedRTL);
+
+  if (rtlBtn) {
+    rtlBtn.addEventListener('click', () => {
+      const curRTL = root.getAttribute('dir') === 'rtl';
+      setDirection(!curRTL);
+    });
+  }
+
 });

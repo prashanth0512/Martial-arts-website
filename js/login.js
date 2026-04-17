@@ -123,4 +123,25 @@ loginForm.addEventListener('submit', (e) => {
 });
 
 
+const rtlToggle   = document.getElementById('rtl-toggle');
+
+function initRTL() {
+  if (!rtlToggle) return;
+  
+  const saved = localStorage.getItem('rtl') === 'true';
+  if (saved) {
+    html.setAttribute('dir', 'rtl');
+    rtlToggle.textContent = 'RTL';
+  }
+
+  rtlToggle.addEventListener('click', () => {
+    const isRTL = html.getAttribute('dir') === 'rtl';
+    const nextRTL = !isRTL;
+    html.setAttribute('dir', nextRTL ? 'rtl' : 'ltr');
+    localStorage.setItem('rtl', nextRTL);
+    rtlToggle.textContent = nextRTL ? 'RTL' : 'LTR';
+  });
+}
+
 initTheme();
+initRTL();

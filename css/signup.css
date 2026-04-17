@@ -125,6 +125,36 @@ button {
 }
 
 
+.rtl-toggle {
+  position: fixed;
+  top: 20px;
+  right: 80px;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--theme-btn-bg);
+  border: 1px solid var(--theme-btn-border);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.rtl-toggle:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
 .theme-toggle {
   position: fixed;
   top: 20px;
@@ -473,16 +503,16 @@ button {
   justify-content: center;
   gap: 10px;
   width: 100%;
-  padding: 13px 20px;
-  border-radius: 13px;
+  padding: 11px 18px;
+  border-radius: 12px;
   background: linear-gradient(135deg, #d11231 0%, #ff1f45 100%);
   color: #ffffff;
   font-family: 'Teko', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
-  box-shadow: 0 6px 24px var(--accent-glow);
+  box-shadow: 0 6px 20px var(--accent-glow);
   transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
   position: relative;
   overflow: hidden;

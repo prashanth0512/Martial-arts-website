@@ -282,15 +282,15 @@ header {
   background: var(--card-bg);
 }
 .get-started-btn {
-  padding: 10px 24px;
+  padding: 6px 18px;
   border: 2px solid var(--text-primary);
   color: var(--text-primary);
   font-family: 'Teko', sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s;
-  min-height: 44px;
+  min-height: 38px;
   display: flex;
 }
 .login-btn {

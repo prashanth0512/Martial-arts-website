@@ -702,3 +702,49 @@ body {
   }
   .dash-sidebar { transition-duration: 0.2s !important; }
 }
+
+
+[dir="rtl"] .dash-sidebar {
+  left: auto;
+  right: 0;
+  border-right: none;
+  border-left: 1px solid var(--border-color);
+}
+
+[dir="rtl"] .dash-main {
+  margin-left: 0;
+  margin-right: 260px;
+}
+
+[dir="rtl"] .sidebar-badge {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .avatar-belt-dot {
+  right: auto;
+  left: 2px;
+}
+
+[dir="rtl"] .msg-item.unread::before {
+  left: auto;
+  right: -12px;
+}
+
+@media (max-width: 1024px) {
+  [dir="rtl"] .dash-sidebar {
+    transform: translateX(100%);
+  }
+  [dir="rtl"] .dash-sidebar.open {
+    transform: translateX(0);
+  }
+  [dir="rtl"] .dash-main {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  [dir="rtl"] .msg-item.unread::before {
+    right: -6px;
+  }
+}
