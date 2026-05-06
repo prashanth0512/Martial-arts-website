@@ -251,6 +251,7 @@ button {
 
 .auth-brand {
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .brand-link {
@@ -282,6 +283,7 @@ button {
 
 .auth-heading {
   margin-bottom: 22px;
+  text-align: center;
 }
 
 .auth-heading h1 {
@@ -325,6 +327,7 @@ button {
   transition: all 0.25s ease;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  white-space: nowrap;
 }
 
 .social-btn:hover {
@@ -572,13 +575,13 @@ button {
     font-size: 2rem;
   }
 
-  .social-btn span {
-    display: none;    
+  .social-btn {
+    width: 100%;
+    padding: 12px;
   }
 
-  .social-btn {
-    flex: 0 0 50%;
-    padding: 12px;
+  .social-login {
+    flex-direction: column;
   }
 
   .back-home span {

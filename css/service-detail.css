@@ -416,7 +416,7 @@
   top: 0; left: 0; right: 0; height: 3px;
   background: var(--accent-color);
 }
-.sd-cta h2 { font-size: 4.5rem; margin-bottom: 16px; }
+
 .sd-cta p { color: var(--text-secondary); max-width: 480px; margin: 0 auto 36px; }
 .sd-cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
@@ -432,7 +432,7 @@
   .sd-hero-title { font-size: 5rem; }
   .sd-about-title { font-size: 3rem; }
   .sd-section-heading { font-size: 3rem; }
-  .sd-cta h2 { font-size: 3.5rem; }
+
 }
 
 
@@ -490,7 +490,7 @@
 
   .pricing-amount { font-size: 4rem; }
 
-  .sd-cta h2 { font-size: 2.6rem; }
+
   .sd-cta-actions { flex-direction: column; align-items: center; }
   .sd-cta-actions .btn { width: 100%; max-width: 300px; min-height: 54px; }
 

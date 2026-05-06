@@ -338,8 +338,6 @@ header {
 }
 
 .about-title {
-  font-size: 3.5rem;
-  margin-bottom: 30px;
 }
 
 .about-text {
@@ -396,7 +394,6 @@ header {
 }
 
 .section-title {
-  font-size: 4rem;
 }
 
 .programs-grid {
@@ -769,7 +766,6 @@ footer {
 @media (max-width: 1024px) {
   .hero-bg { width: 70%; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .about-title { font-size: 3rem; }
   .testimonial-container { flex-direction: column; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
   .join-content { flex-direction: column; text-align: center; gap: 40px; }

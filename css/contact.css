@@ -104,8 +104,6 @@
   max-width: 600px;
 }
 .contact-form-header h2 {
-  font-size: 3.5rem;
-  margin-bottom: 12px;
 }
 .contact-form-header p {
   color: var(--text-secondary);
@@ -239,7 +237,7 @@
   text-align: center;
   margin-bottom: 40px;
 }
-.map-header h2 { font-size: 3.5rem; margin-bottom: 8px; }
+
 .map-header p { color: var(--text-secondary); max-width: 500px; margin: 0 auto; }
 .map-wrapper {
   width: 100%;
@@ -275,10 +273,7 @@
   background: linear-gradient(90deg, var(--accent-color), #8a0c20, var(--accent-color));
 }
 .contact-cta h2 {
-  font-size: 5rem;
   color: #fff;
-  line-height: 1;
-  margin-bottom: 20px;
 }
 .contact-cta p {
   color: rgba(255,255,255,0.7);
@@ -291,7 +286,7 @@
 
 @media (max-width: 1280px) {
   .contact-hero .page-hero-title { font-size: 5rem; }
-  .contact-cta h2 { font-size: 4rem; }
+
 }
 
 
@@ -308,7 +303,7 @@
   .contact-form-box { padding: 40px; }
   .contact-hero .page-hero-title { font-size: 4rem; }
   .map-wrapper iframe { height: 380px; }
-  .contact-cta h2 { font-size: 3.5rem; }
+
   .contact-form-section { padding: 80px 0; }
   .contact-map-section { padding: 0 0 80px; }
 }
@@ -324,7 +319,7 @@
 
   
   .contact-form-section { padding: 60px 0; }
-  .contact-form-header h2 { font-size: 2.5rem; }
+
   .contact-form-box { padding: 28px 20px; border-radius: 14px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
 
@@ -339,12 +334,12 @@
 
   
   .contact-map-section { padding: 0 0 60px; }
-  .map-header h2 { font-size: 2.5rem; }
+
   .map-wrapper iframe { height: 280px; }
 
   
   .contact-cta { padding: 70px 0; }
-  .contact-cta h2 { font-size: 2.6rem; }
+
   .cta-actions { flex-direction: column; align-items: center; }
   .cta-actions .btn { width: 100%; max-width: 320px; min-height: 54px; }
 }

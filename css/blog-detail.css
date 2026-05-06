@@ -83,8 +83,6 @@
 
 
 .bd-content h2 {
-  font-size: 2.6rem;
-  margin: 36px 0 14px;
 }
 .bd-content h3 {
   font-size: 2rem;
@@ -271,7 +269,7 @@
   .bd-hero { padding: 120px 0 60px; }
   .bd-hero-title { font-size: 2.4rem; }
   .bd-hero-meta { gap: 12px; }
-  .bd-content h2 { font-size: 2rem; }
+
   .bd-content h3 { font-size: 1.7rem; }
   .bd-related-grid { grid-template-columns: 1fr; }
   .bd-author { flex-direction: column; text-align: center; }
