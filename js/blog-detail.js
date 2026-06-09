@@ -62,6 +62,7 @@ const BLOGS = {
         <li>Ask your instructor questions — curiosity accelerates learning</li>
       </ul>
     `,
+    gallery: ['../images/karate_1.png', '../images/karate_2.png', '../images/karate_3.png'],
     related: ['muay-thai-training', 'benefits-for-kids', 'choose-your-art'],
   },
 
@@ -119,6 +120,7 @@ const BLOGS = {
         <li>Training too hard too soon — progress sustainably to avoid burnout and injury</li>
       </ul>
     `,
+    gallery: ['../images/muay_thai_1.png', '../images/muay_thai_2.png', '../images/muay_thai_3.png'],
     related: ['karate-basics', 'bjj-guard-techniques', 'benefits-for-kids'],
   },
 
@@ -176,6 +178,7 @@ const BLOGS = {
         <li>Pull their head down and squeeze your knees together — the carotid arteries compress and the tap comes</li>
       </ul>
     `,
+    gallery: ['../images/about_james.png', '../images/about_daniel.png', '../images/home2_hero.png'],
     related: ['karate-basics', 'kung-fu-forms', 'choose-your-art'],
   },
 
@@ -227,6 +230,7 @@ const BLOGS = {
         <li>Pair each sequence with slow partner work to embed the application in muscle memory</li>
       </ul>
     `,
+    gallery: ['../images/about_vision_bg.png', '../images/about_hero_bg.png', '../images/programs.png'],
     related: ['karate-basics', 'muay-thai-training', 'benefits-for-kids'],
   },
 
@@ -274,6 +278,7 @@ const BLOGS = {
       <h2>What Age Should My Child Start?</h2>
       <p>We welcome children from age 5 at GELUD. At 5 to 7 years, classes focus on coordination, listening, and basic technique through games and fun drills. From age 8 onwards, children begin working with more structure and can start progressing through the belt system.</p>
     `,
+    gallery: ['../images/karate_4.png', '../images/home2_hero.png', '../images/about_ben.png'],
     related: ['karate-basics', 'choose-your-art', 'muay-thai-training'],
   },
 
@@ -324,6 +329,7 @@ const BLOGS = {
       <h2>Our Recommendation: Try Before You Decide</h2>
       <p>Book a free trial class in each discipline you are considering. Feel the environment, meet the instructors, and listen to your instincts. The best class will be the one that leaves you excited to come back — and that excitement is worth more than any objective ranking of styles.</p>
     `,
+    gallery: ['../images/hero.png', '../images/programs.png', '../images/join_class.png'],
     related: ['karate-basics', 'bjj-guard-techniques', 'kung-fu-forms'],
   },
 };
@@ -373,6 +379,15 @@ function renderBlog(key) {
   document.querySelector('.bd-author img').alt = b.author;
   document.querySelector('.bd-author h5').textContent = b.author;
   document.querySelector('.bd-author p').textContent = b.authorBio;
+
+  const galleryGrid = document.querySelector('.bd-gallery-grid');
+  if (galleryGrid && b.gallery) {
+    galleryGrid.innerHTML = b.gallery.map(imgSrc => `
+      <div class="bd-gallery-item">
+        <img src="${imgSrc}" alt="${b.title} Gallery" loading="lazy">
+      </div>
+    `).join('');
+  }
 
   const relatedIds = (b.related || []).slice(0,4);
   document.querySelector('.bd-related-grid').innerHTML = relatedIds.map(buildRelatedCard).join('');
