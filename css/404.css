@@ -145,7 +145,7 @@
   .error-title { font-size: 2.5rem; }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .error-code { font-size: 7rem; }
   .error-title { font-size: 2rem; }
   .error-message { font-size: 0.95rem; padding: 0 10px; }

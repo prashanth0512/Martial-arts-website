@@ -356,6 +356,41 @@ footer {
 .footer-links a:hover i { opacity: 1; transform: translateX(0); }
 [dir="rtl"] .footer-links a:hover i { transform: translateX(0) scaleX(-1); }
 .footer-links li:not(:has(a)) { color: var(--text-secondary); font-size: 0.95rem; }
+
+.footer-contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.footer-contact-info li i {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  width: 20px;
+  text-align: center;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+.footer-contact-info li a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-contact-info li a:hover {
+  color: var(--accent-color);
+}
+.footer-contact-info li span {
+  color: var(--text-secondary);
+}
+
 .footer-bottom {
   padding-top: 20px;
   border-top: 1px solid var(--border-color);
@@ -440,14 +475,15 @@ footer {
     .nav-container {
       grid-template-columns: 1fr auto;
       gap: 15px;
+      height: 90px;
     }
     
     .nav-links {
       display: none; 
       position: fixed;
-      top: 80px; left: -100%;
+      top: 90px; left: -100%;
       width: 100%;
-      height: calc(100vh - 80px);
+      height: calc(100vh - 90px);
       background: var(--header-bg);
       backdrop-filter: blur(12px);
       flex-direction: column;
@@ -467,8 +503,8 @@ footer {
     .get-started-btn { display: none !important; }
     .login-btn { display: flex !important; }
     
-    .logo { font-size: 1.8rem; }
-    .logo img { height: 36px; }
+    .logo { font-size: 2.0rem; }
+    .logo img { height: 42px; }
     .nav-links > li { width: 100%; border-bottom: 1px solid var(--border-color); }
     .nav-links > li > a,
     .nav-links > li > .nav-dropdown { font-size: 1.3rem; padding: 18px 30px; display: flex; width: 100%; justify-content: space-between; align-items: center; }
@@ -506,6 +542,36 @@ footer {
     .global-join-inner { padding: 60px 0; gap: 30px; }
     .global-join-right a.btn { width: 100%; max-width: 250px; }
     h2 { font-size: 2.5rem; margin-bottom: 8px; }
+  }
+
+  @media (max-width: 480px) {
+    .nav-container {
+      height: 90px;
+    }
+    .logo {
+      font-size: 1.7rem;
+      gap: 8px;
+    }
+    .logo img {
+      height: 36px;
+    }
+    .header-actions {
+      gap: 6px;
+    }
+    .action-btn {
+      width: 38px;
+      height: 38px;
+      font-size: 1.05rem;
+    }
+    .hamburger {
+      width: 40px;
+      height: 40px;
+      font-size: 1.25rem;
+    }
+    .nav-links {
+      top: 90px;
+      height: calc(100vh - 90px);
+    }
   }
 
   

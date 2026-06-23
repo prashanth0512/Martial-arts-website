@@ -523,10 +523,9 @@
   .about-hero-fighter-wrap { margin-top: 20px; }
   .about-hero-fighter { max-width: 320px; }
 
+  .about-stats-grid { grid-template-columns: 1fr; gap: 16px; }
+  .about-stat-card { padding: 20px; }
   .about-stat-num { font-size: 3rem; }
-  .about-stats-row { flex-wrap: wrap; gap: 16px; }
-  .about-stat { border-right: none; text-align: center; min-width: calc(50% - 8px); }
-  .about-stat:first-child { text-align: center; }
 
   .instructors-grid { grid-template-columns: 1fr; }
   .instructor-card:nth-child(3) { grid-column: span 1; }

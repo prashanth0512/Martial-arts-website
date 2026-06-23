@@ -369,6 +369,15 @@
   .join-banner-inner { flex-direction: column; text-align: center; }
   .join-right { max-width: 100%; }
   .join-title { font-size: 5rem; }
+  .tp-grid { grid-template-columns: 1fr; gap: 40px; }
+  .tp-content { order: 1; }
+  .tp-visual { order: 2; }
+  .nv-grid { grid-template-columns: 1fr; gap: 40px; }
+  .nv-visual { order: 2; }
+  .nv-content { order: 1; }
+}
+@media (max-width: 768px) {
+  .testi-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .hero { min-height: auto; padding: 120px 0 80px; }
@@ -380,7 +389,6 @@
   .hero-cta { flex-direction: column; align-items: flex-start; }
   .programs-grid { grid-template-columns: 1fr; }
   .program-card { border-right: none; }
-  .testi-grid { grid-template-columns: 1fr; }
   .about-grid { gap: 40px; }
   .join-title { font-size: 3.5rem; }
   .section-title { }

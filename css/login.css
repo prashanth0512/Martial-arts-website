@@ -593,7 +593,7 @@ button {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   .auth-card {
     padding: 16px 12px;
   }

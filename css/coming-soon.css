@@ -152,8 +152,8 @@
   .cs-title { font-size: 3rem; }
 }
 
-@media (max-width: 360px) {
-  .cs-container { max-width: 290px; padding: 30px 20px; border-radius: 15px; }
+@media (max-width: 480px) {
+  .cs-container { max-width: 100%; padding: 30px 20px; border-radius: 15px; }
   .cs-brand-name { font-size: 1.6rem; }
   .cs-logo { height: 40px; }
   .cs-title { font-size: 2.5rem; }
