@@ -5,7 +5,7 @@
   align-items: center;
   overflow: hidden;
   padding: 100px 0;
-  background: var(--bg-color);
+  background: #0f1011;
 }
 
 .about-hero-bg {
@@ -91,6 +91,14 @@
 
 .about-hero-actions .btn {
   color: #fff !important;
+}
+
+.about-hero-actions .btn-white:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(209, 18, 49, 0.4);
 }
 
 
